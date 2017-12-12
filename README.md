@@ -14,20 +14,19 @@ Setup Instructions
 6. Press Ctrl-Shift-P
 7. Choose "Tasks: Configure Default Build Task"
 8. Choose "tsc: watch - tsconfig.json"
-9. Add a simple test.ts file with a console log in it or something
-10. Press Ctrl-Shift-B to build and start the watch for .ts changes
-11. Open a new terminal window with Ctrl-Shift-` and note the dropdown between different terminals
-12. Run this in that terminal: sudo npm install -g http-server
-13. Run this in that terminal whenever you want to perform debugging: http-server
-14. Let the http-server in that terminal keep running in the background
-15. Click Extensions icon on the left
-16. Search for "Debugger for Chrome" and make sure it is installed (and reload VS Code)
-17. Click on the Debugger icon on the left
-18. Click on the box at the top that says No Configuration and select Add Configuration
-19. Choose Chrome and Chrome: Launch
-20. Inside launch.json, make sure "url": "http://localhost:8080", is correct for http-server
-21. Click on the green arrow or press F5 to start the Debugger
-22. You need to click on the refresh button in the VS Code debugging tools for it to work
+9. Press Ctrl-Shift-B to build and start the watch for .ts changes
+10. Open a new terminal window with Ctrl-Shift-` and note the dropdown between different terminals
+11. Run this in that terminal: sudo npm install -g http-server
+12. Run this in that terminal whenever you want to perform debugging: http-server
+13. Let the http-server in that terminal keep running in the background
+14. Click Extensions icon on the left
+15. Search for "Debugger for Chrome" and make sure it is installed (and reload VS Code)
+16. Click on the Debugger icon on the left
+17. Click on the box at the top that says No Configuration and select Add Configuration
+18. Choose Chrome and Chrome: Launch
+19. Inside launch.json, make sure "url": "http://localhost:8080", is correct for http-server
+20. Click on the green arrow or press F5 to start the Debugger
+21. YOU NEED TO OFTEN CLICK ON THE REFRESH BUTTON IN THE VS CODE DEBUGGING TOOLS TO MAKE THINGS WORK
 
 Press "Ctrl-," and paste this into the editor pane on the right:
 ```
