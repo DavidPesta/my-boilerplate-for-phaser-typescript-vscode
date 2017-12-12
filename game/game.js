@@ -12,7 +12,7 @@ var __extends = (this && this.__extends) || (function () {
 var Game = (function (_super) {
     __extends(Game, _super);
     function Game() {
-        var _this = _super.call(this, 1280, 720, Phaser.AUTO, 'content', null) || this;
+        var _this = _super.call(this, 1280, 720, Phaser.AUTO) || this;
         _this.state.add('Boot', Boot);
         _this.state.add('Preloader', Preloader);
         _this.state.add('Scene', Scene);
@@ -29,6 +29,11 @@ var Boot = (function (_super) {
     function Boot() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
+    Boot.prototype.init = function () {
+        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        this.scale.pageAlignHorizontally = true;
+        this.scale.pageAlignVertically = true;
+    };
     Boot.prototype.preload = function () { };
     Boot.prototype.create = function () {
         this.game.state.start('Preloader', true, false);
