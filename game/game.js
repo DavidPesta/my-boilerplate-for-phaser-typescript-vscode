@@ -41,7 +41,7 @@ var Preloader = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Preloader.prototype.preload = function () {
-        this.game.load.image('image', 'Scene/image.png');
+        this.game.load.image('image', 'game/Scene/image.png');
     };
     Preloader.prototype.create = function () {
         this.game.state.start('Scene');
