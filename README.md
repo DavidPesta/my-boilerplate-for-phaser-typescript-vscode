@@ -31,23 +31,26 @@ Setup Instructions
 Press "Ctrl-," and paste this into the editor pane on the right:
 ```
 {
-    "window.zoomLevel": 0,
-    "explorer.confirmDelete": false,
-    "window.menuBarVisibility": "toggle",
-    "workbench.activityBar.visible": true,
-    "workbench.statusBar.visible": true,
-    "workbench.editor.showTabs": false,
-    "workbench.colorCustomizations": {
-        // Gutter indicators (left)
-        "editorGutter.addedBackground": "#00ff00",
-        "editorGutter.modifiedBackground": "#0084ff",
-        "editorGutter.deletedBackground": "#ff0000",
-        // Scrollbar indicators (right)
-        "editorOverviewRuler.addedForeground": "#00ff00",
-        "editorOverviewRuler.modifiedForeground": "#0084ff",
-        "editorOverviewRuler.deletedForeground": "#ff0000"
-    },
-    "editor.insertSpaces": false
+	"window.zoomLevel": 0,
+	"explorer.confirmDelete": false,
+	"window.menuBarVisibility": "toggle",
+	"workbench.activityBar.visible": true,
+	"workbench.statusBar.visible": true,
+	"workbench.editor.showTabs": false,
+	"workbench.colorCustomizations": {
+		// Gutter indicators (left)
+		"editorGutter.modifiedBackground": "#0084ff",
+		"editorGutter.addedBackground": "#00ff00",
+		"editorGutter.deletedBackground": "#ff0000",
+		// Scrollbar indicators (right)
+		"editorOverviewRuler.modifiedForeground": "#0084ff",
+		"editorOverviewRuler.addedForeground": "#00ff00",
+		"editorOverviewRuler.deletedForeground": "#ff0000"
+	},
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"editor.renderWhitespace": "all"
 }
 ```
 
