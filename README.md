@@ -50,7 +50,8 @@ Press "Ctrl-," and paste this into the editor pane on the right:
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
-	"editor.renderWhitespace": "all"
+	"editor.renderWhitespace": "all",
+	"editor.trimAutoWhitespace": false
 }
 ```
 
