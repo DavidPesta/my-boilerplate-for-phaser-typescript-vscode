@@ -51,7 +51,8 @@ Press "Ctrl-," and paste this into the editor pane on the right:
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
 	"editor.renderWhitespace": "all",
-	"editor.trimAutoWhitespace": false
+	"editor.trimAutoWhitespace": false,
+	"editor.lightbulb.enabled": false
 }
 ```
 
