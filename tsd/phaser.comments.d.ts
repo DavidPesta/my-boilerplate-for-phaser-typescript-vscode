@@ -10149,7 +10149,7 @@ declare module Phaser {
         * If the cursor is at the end of the group (top child) it is moved the start of the group (bottom child).
         * @return The child the cursor now points to.
         */
-        next(): void;
+        next(): any;
 
         /**
         * The core postUpdate - as called by World.
