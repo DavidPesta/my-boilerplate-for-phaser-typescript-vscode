@@ -4,10 +4,10 @@ class Boot extends Phaser.State {
 		this.scale.pageAlignHorizontally = true;
 		this.scale.pageAlignVertically = true;
 	}
-
+	
 	preload() {}
 	
 	create() {
-		this.game.state.start('Preloader', true, false);
+		this.game.state.start("Preloader", true, false);
 	}
 }
