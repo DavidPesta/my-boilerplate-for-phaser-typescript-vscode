@@ -10167,7 +10167,7 @@ declare module Phaser {
         * If the cursor is at the start of the group (bottom child) it is moved to the end (top child).
         * @return The child the cursor now points to.
         */
-        previous(): void;
+        previous(): any;
 
         /**
         * Removes the given child from this group.
