@@ -13,6 +13,6 @@ class Home extends Phaser.State {
 		});
 		
 		var style = {font: '35px Arial', fill: '#fff'};
-		this.game.add.text(this.game.world.centerX - 160, this.game.world.centerY - 20, 'TOUCH TO START', style);
+		this.game.add.text(this.game.world.centerX - 150, this.game.world.centerY - 20, 'PRESS TO START', style);
 	}
 }
