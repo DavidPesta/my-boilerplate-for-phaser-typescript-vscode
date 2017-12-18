@@ -1,4 +1,4 @@
-class Scene extends Phaser.State {
+class GameScene extends Phaser.State {
 	preload() {}
 	
 	create() {
