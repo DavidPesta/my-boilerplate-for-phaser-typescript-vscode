@@ -1,7 +1,7 @@
 class Home extends Phaser.State {
 	background:Phaser.Sprite;
 	
-	preload() {}
+	init() {}
 	
 	create() {
 		this.background = this.game.add.sprite(0, 0);
