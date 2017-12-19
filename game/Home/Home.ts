@@ -1,8 +1,6 @@
 class Home extends Phaser.State {
 	background:Phaser.Sprite;
 	
-	init() {}
-	
 	create() {
 		this.background = this.game.add.sprite(0, 0);
 		this.background.width = 1280;
