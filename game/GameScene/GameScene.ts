@@ -14,8 +14,8 @@ class GameScene extends Phaser.State {
 		}, this);
 		
 		this.backgroundImage = this.game.add.sprite(0, 0, "backgroundImage");
-		this.backgroundImage.width = 1280;
-		this.backgroundImage.height = 720;
+		this.backgroundImage.width = this.game.width;
+		this.backgroundImage.height = this.game.height;
 		this.backgroundImage.x = this.backgroundImage.width / 2;
 		this.backgroundImage.y = this.backgroundImage.height / 2;
 		this.backgroundImage.anchor.setTo(0.5);

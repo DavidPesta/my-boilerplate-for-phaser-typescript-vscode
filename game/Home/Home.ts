@@ -5,8 +5,8 @@ class Home extends Phaser.State {
 		Game.fadeIn(this.game);
 		
 		this.background = this.game.add.sprite(0, 0);
-		this.background.width = 1280;
-		this.background.height = 720;
+		this.background.width = this.game.width;
+		this.background.height = this.game.height;
 		this.background.inputEnabled = true;
 		this.background.events.onInputDown.add(() => {
 			Game.fadeOut(this.game, () => {
