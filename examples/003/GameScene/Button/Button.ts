@@ -3,12 +3,12 @@ class Button extends Phaser.Sprite {
 	
 	constructor(parentScene:Phaser.State, x:number, y:number, imageKey:string, clickAction:Function) {
 		super(parentScene.game, x, y, imageKey);
+		this.game.add.existing(this);
 		
 		this.inputEnabled = true;
 		this.events.onInputDown.add(clickAction, parentScene);
 		
 		this.anchor.setTo(0.5);
-		this.game.add.existing(this);
 	}
 	
 	select() {

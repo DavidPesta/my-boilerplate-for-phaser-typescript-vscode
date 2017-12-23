@@ -11,6 +11,7 @@ class Pet extends Phaser.Sprite {
 	
 	constructor(parentScene:GameScene, x:number, y:number) {
 		super(parentScene.game, x, y, "petSheet");
+		this.game.add.existing(this);
 		
 		this.parentScene = parentScene;
 		this.statsDecreaser = this.game.time.events.loop(Phaser.Timer.SECOND * 5, this.passivelyReduceStats, this);
@@ -21,7 +22,6 @@ class Pet extends Phaser.Sprite {
 		this.input.enableDrag();
 		
 		this.anchor.setTo(0.5);
-		this.game.add.existing(this);
 	}
 	
 	checkAndReactToStats() {

@@ -9,11 +9,10 @@ class Enemy extends Phaser.Sprite {
 	
 	constructor(gameScene:GameScene, x:number, y:number, speedY:number) {
 		super(gameScene.game, x, y, "enemyImage");
+		this.game.add.existing(this);
 		
 		this.gameScene = gameScene;
 		this.speedY = speedY;
-		
-		this.game.add.existing(this);
 	}
 	
 	update() {

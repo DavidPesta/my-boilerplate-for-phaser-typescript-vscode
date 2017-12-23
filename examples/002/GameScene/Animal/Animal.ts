@@ -17,6 +17,7 @@ class Animal extends Phaser.Sprite {
 	
 	constructor(game:Phaser.Game, x:number, y:number, data:{kind:string, imageKey:string, frame:number, audioKey:string}) {
 		super(game, x, y, data.imageKey, data.frame);
+		this.game.add.existing(this);
 		
 		this.kind = data.kind;
 		this.text = this.kind.toUpperCase();
@@ -28,8 +29,6 @@ class Animal extends Phaser.Sprite {
 		this.inputEnabled = true;
 		this.input.pixelPerfectClick = true;
 		this.events.onInputDown.add(this.animate, this);
-		
-		this.game.add.existing(this);
 	}
 	
 	animate() {

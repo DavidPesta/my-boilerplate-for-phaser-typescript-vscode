@@ -10,12 +10,11 @@ class Hero extends Phaser.Sprite {
 	
 	constructor(gameScene:GameScene, x:number, y:number, speedX:number) {
 		super(gameScene.game, x, y, "heroImage");
+		this.game.add.existing(this);
 		
 		this.gameScene = gameScene;
 		this.speedX = speedX;
 		this.isMoving = false;
-		
-		this.game.add.existing(this);
 	}
 	
 	startMoving() {

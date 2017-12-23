@@ -9,6 +9,7 @@ class Arrow extends Phaser.Sprite {
 	
 	constructor(direction:string, parentScene:Phaser.State, x:number, y:number, clickAction:Function) {
 		super(parentScene.game, x, y, "arrowImage");
+		this.game.add.existing(this);
 		
 		//this.parentScene = parentScene;
 		this.direction = direction;
@@ -22,7 +23,5 @@ class Arrow extends Phaser.Sprite {
 		this.inputEnabled = true;
 		this.input.pixelPerfectClick = true;
 		this.events.onInputDown.add(clickAction, parentScene);
-		
-		this.game.add.existing(this);
 	}
 }
