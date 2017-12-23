@@ -5,7 +5,6 @@ Usage Instructions
 3. Type http-server
 4. Leave both terminals running in the background (you can click the "x" to close the terminal panes)
 5. Press F5 or click on the green arrow to start the debugger
-6. YOU NEED TO OFTEN CLICK ON THE REFRESH BUTTON IN THE VS CODE DEBUGGING TOOLS TO MAKE THINGS WORK
 
 
 Setup Instructions
@@ -87,7 +86,8 @@ Go Forward --> Ctrl+RightArrow
 23. Choose Chrome and Chrome: Launch
 24. Inside launch.json, make sure "url": "http://localhost:8080", is correct for http-server
 25. Click on the green arrow or press F5 to start the Debugger
-26. YOU NEED TO OFTEN CLICK ON THE REFRESH BUTTON IN THE VS CODE DEBUGGING TOOLS TO MAKE THINGS WORK
+26. When you see Chrome appear, immediately install the "Classic Cache Killer" extension
+27. Right click on the "Classic Cache Killer" icon, choose "Options" and "Enable on start"
 
 
 The following resources provided inspiration that helped me develop this boilerplate:
