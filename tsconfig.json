@@ -56,8 +56,6 @@
     "node_modules",
     "phaser",
     "game.js",
-    "game.js.map",
-    "tsd/phaser.d.ts",
-    "tsd/pixi.d.ts"
+    "game.js.map"
   ]
 }
