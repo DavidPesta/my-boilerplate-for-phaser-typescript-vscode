@@ -22,3 +22,6 @@ These files are meant to preserve many hard won learning experiences.
 
 
 * for loops: Use "of" to traverse array elements. Use "in" to traverse object properties, but note that the temp variable is the key and not the value.
+
+
+* When a Sprite belongs to a Group, its update method does not fire, probably to save resources. Rather, the update method on the group needs to be used. Use this.forEachExists, for example, inside of the group's update method.
