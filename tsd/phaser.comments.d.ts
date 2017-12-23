@@ -16570,6 +16570,12 @@ declare module Phaser {
             gravity: Phaser.Point;
 
             /**
+            * If true the Body.preUpdate method will be skipped, halting all motion for all bodies. Note that other
+            * methods such as collide will still work, so be careful not to call them on paused bodies.
+            */
+            isPaused: boolean;
+
+            /**
             * The world QuadTree.
             */
             quadTree: Phaser.QuadTree;
@@ -25008,7 +25014,7 @@ declare module Phaser {
         * @param key This is the image or texture used by the Sprite during rendering. It can be a string which is a reference to the Cache entry, or an instance of a RenderTexture or PIXI.Texture.
         * @param frame If this Sprite is using part of a sprite sheet or texture atlas you can specify the exact frame to use by giving a string or numeric index.
         */
-        constructor(game: Phaser.Game, x: number, y: number, key?: string | Phaser.RenderTexture | Phaser.BitmapData | PIXI.Texture, frame?: string | number);
+        constructor(game: Phaser.Game, x?: number, y?: number, key?: string | Phaser.RenderTexture | Phaser.BitmapData | PIXI.Texture, frame?: string | number);
 
 
         /**
@@ -25076,7 +25082,7 @@ declare module Phaser {
         * 
         * If you need a different result then adjust or re-create the Body shape offsets manually or reset the anchor after enabling physics.
         */
-        body: Phaser.Physics.Arcade.Body | Phaser.Physics.P2.Body | Phaser.Physics.Ninja.Body | any;
+        body: Phaser.Physics.Arcade.Body;
 
         /**
         * The sum of the y and height properties.
@@ -29381,7 +29387,7 @@ declare module Phaser {
         * 
         * If you need a different result then adjust or re-create the Body shape offsets manually or reset the anchor after enabling physics.
         */
-        body: Phaser.Physics.Arcade.Body | Phaser.Physics.P2.Body | Phaser.Physics.Ninja.Body | any;
+        body: Phaser.Physics.Arcade.Body;
 
         /**
         * The sum of the y and height properties.
