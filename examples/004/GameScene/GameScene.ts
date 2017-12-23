@@ -79,7 +79,6 @@ class GameScene extends Phaser.State {
 		let wait:Phaser.Timer = this.game.time.create();
 		wait.add(1000, () => {
 			Game.fadeOut(this.game, () => {
-				this.game.physics.arcade.isPaused = false;
 				this.game.state.start("Home");
 			}, this);
 		}, this);
@@ -94,7 +93,6 @@ class GameScene extends Phaser.State {
 		let wait:Phaser.Timer = this.game.time.create();
 		wait.add(1000, () => {
 			Game.fadeOut(this.game, () => {
-				this.game.physics.arcade.isPaused = false;
 				this.game.state.start("Home");
 			}, this);
 		}, this);
