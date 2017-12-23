@@ -7,6 +7,8 @@ class Preloader extends Phaser.State {
 	preloadBar:Phaser.Sprite;
 	
 	preload() {
+		Game.fadeIn(this.game);
+		
 		this.preloadBar = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY + 128, "preloadBarImage");
 		this.preloadBar.anchor.setTo(0.5);
 		this.load.setPreloadSprite(this.preloadBar);
