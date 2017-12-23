@@ -19,3 +19,6 @@ These files are meant to preserve many hard won learning experiences.
 
 
 * For "this.events.onInputDown.add(listener, listenerContext)" inside of a member class where the function belongs to the container class, BE SURE to pass a reference to the container class to the "listenerContext" in addition to the reference to the container class's function to be called.
+
+
+* for loops: Use "of" to traverse array elements. Use "in" to traverse object properties, but note that the temp variable is the key and not the value.
