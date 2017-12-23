@@ -50,7 +50,9 @@ Go Forward --> Ctrl+RightArrow
 	"editor.tabSize": 4,
 	"editor.renderWhitespace": "all",
 	"editor.trimAutoWhitespace": false,
-	"editor.lightbulb.enabled": false
+	"editor.lightbulb.enabled": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.openEditors.visible": 0
 }
 ```
 4. Press Ctrl-`
