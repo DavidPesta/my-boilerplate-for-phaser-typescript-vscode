@@ -1,4 +1,11 @@
-These files are meant to preserve many hard won learning experiences.
+Snippets
+
+* [Sprite (link)](snippets/Sprite.md)
+
+* [Sprite Group (link)](snippets/SpriteGroup.md)
+
+
+These items are meant to preserve many hard won learning experiences.
 
 * DO NOT CREATE GRAPHICS until the game code is mostly written and playable. Create rectangle placeholders for sprite images and such so that you can decide on image dimensions and so that momentum exists toward finishing. Prepare the image filenames as intended, but decide on the actual graphics later.
 
