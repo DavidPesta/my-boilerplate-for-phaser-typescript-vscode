@@ -56,3 +56,5 @@ class SpriteNameGroup extends Phaser.Group {
 ```
 
 FINALLY, after you do all this, you'll need to close and re-open Visual Studio Code for the IDE references to work.
+
+If there is ever a doubt that recycling is happening, use the Chrome console and examine live variable values inside of window.Phaser.GAMES[0].world.children.

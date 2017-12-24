@@ -32,3 +32,6 @@ These items are meant to preserve many hard won learning experiences.
 
 
 * When a Sprite belongs to a Group, its update method does not fire, probably to save resources. Rather, the update method on the group needs to be used. Use this.forEachExists, for example, inside of the group's update method.
+
+
+* To examine variable values inside of the Chrome dev tools, this is where they can be found: window.Phaser.GAMES[0].world.children
