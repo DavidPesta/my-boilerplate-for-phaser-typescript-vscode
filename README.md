@@ -14,6 +14,7 @@ This is what was done to set all of this up:
 1. Environment pre-steps:<br>
 \# sudo curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -<br>
 \# sudo apt-get install -y nodejs<br>
+\# sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash<br>
 \# sudo npm install -g typescript<br>
 \# sudo npm install -g typings<br>
 \# sudo npm install -g http-server
@@ -100,3 +101,7 @@ The following resources provided inspiration that helped me develop this boilerp
   - https://github.com/photonstorm/phaser-ce/issues/174
   - https://github.com/photonstorm/phaser-ce/commit/9e29186538ad48ed98fbfd72020bc0f2f0d3b9eb
 - https://stackoverflow.com/questions/35963346/only-amd-and-system-modules-are-supported-alongside-out
+- Installing nvm
+  - https://docs.npmjs.com/getting-started/fixing-npm-permissions
+  - https://docs.npmjs.com/getting-started/installing-node
+  - https://github.com/creationix/nvm/blob/master/README.md#installation
