@@ -40,6 +40,8 @@ class GameScene extends Phaser.State {
 	}
 	
 	create() {
+		this.gameLive = true;
+		
 		Game.fadeIn(this.game);
 		
 		this.ground = this.game.add.sprite(0, 810, "groundImage");
@@ -67,8 +69,6 @@ class GameScene extends Phaser.State {
 		this.leftButton = new ArrowButton(MovementDirection.Left, this, 54, 670);
 		this.rightButton = new ArrowButton(MovementDirection.Right, this, 144, 670);
 		this.actionButton = new ActionButton(this, 308, 670);
-		
-		this.gameLive = true;
 	}
 	
 	gameWon() {

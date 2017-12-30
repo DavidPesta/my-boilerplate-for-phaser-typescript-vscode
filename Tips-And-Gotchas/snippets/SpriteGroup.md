@@ -22,11 +22,17 @@ class SpriteName extends Phaser.Sprite {
 		//game.load.spritesheet("spriteNameSheet", assetPath + "/spriteName_spritesheet.png", #, #, #, #, #);
 	}
 	
-	setup(x:number, y:number) {
+	gameScene:GameScene;
+	
+	setup(gameScene:GameScene, x:number, y:number) {
 		//this.loadTexture("spriteNameImage");
 		//this.loadTexture("spriteNameSheet", #);
 		
 		// ATTENTION: loadTexture must come before anything else, especially enabling physics
+		
+		this.gameScene = gameScene;
+		this.x = x;
+		this.y = y;
 	}
 }
 ```
@@ -48,9 +54,17 @@ class SpriteNameGroup extends Phaser.Group {
 			this.add(spriteName);
 		}
 		
-		spriteName.setup(x, y);
+		spriteName.setup(this.gameScene, x, y);
 		
 		return spriteName;
+	}
+	
+	update() {
+		if (this.gameScene.gameLive) {
+			this.forEachExists((spriteName:SpriteName) => {
+				
+			}, this);
+		}
 	}
 }
 ```

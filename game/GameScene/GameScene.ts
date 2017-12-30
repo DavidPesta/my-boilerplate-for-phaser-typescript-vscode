@@ -4,9 +4,12 @@ class GameScene extends Phaser.State {
 		game.load.image("backgroundImage", assetPath + "/image.png");
 	}
 	
+	gameLive:boolean;
 	backgroundImage:Phaser.Sprite;
 	
 	create() {
+		this.gameLive = true;
+		
 		Game.fadeIn(this.game, 100, () => {
 			let rotateBackground:Phaser.Tween = this.game.add.tween(this.backgroundImage);
 			rotateBackground.to({angle: "+360"}, 500);

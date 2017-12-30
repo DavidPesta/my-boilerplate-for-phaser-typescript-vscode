@@ -31,6 +31,12 @@ class SpriteName extends Phaser.Sprite {
 		
 		this.gameScene = gameScene;
 	}
+	
+	update() {
+		if (this.gameScene.gameLive) {
+			
+		}
+	}
 }
 ```
 
