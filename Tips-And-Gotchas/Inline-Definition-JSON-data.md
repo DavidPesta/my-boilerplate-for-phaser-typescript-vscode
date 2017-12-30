@@ -35,7 +35,7 @@ for (let obj of objectArrayJson) {
 
 ----
 
-Here is how to load JSON-like elements into a JSON-style keyed dictionary:
+Use [Indexable Types](http://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) to load JSON-like elements into a JSON-style keyed dictionary:
 ```javascript
 let objectKeyedData:{[keyName:string]: {propertyOne:string, propertyTwo:number, propertyThree:string}} = {
 	"key1": {propertyOne: "oneWithoutQuotes", propertyTwo: 2, propertyThree: "three"},

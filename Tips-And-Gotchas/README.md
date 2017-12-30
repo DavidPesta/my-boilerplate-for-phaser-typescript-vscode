@@ -31,8 +31,14 @@ These items are meant to preserve many hard won learning experiences.
 * For "this.events.onInputDown.add(listener, listenerContext)" inside of a member class where the function belongs to the container class, BE SURE to pass a reference to the container class to the "listenerContext" in addition to the reference to the container class's function to be called.
 
 
-* for loops: Use "of" to traverse array elements. Use "in" to traverse object properties, but note that the temp variable is the key and not the value.
+* for loops: Use "of" to traverse array elements, where the temp variable is the value. Use "in" to traverse object properties, but note that the temp variable is the key and not the value.
 
+
+* Strange, but seems to be the best and most effective way to select a random property from an object:
+```
+let keys:string[] = Object.keys(obj);
+let randomProperty:PropertyType = obj[keys[keys.length * Math.random() << 0]];
+```
 
 * When a Sprite belongs to a Group, its update method does not fire, probably to save resources. Rather, the update method on the group needs to be used. Use this.forEachExists, for example, inside of the group's update method.
 
