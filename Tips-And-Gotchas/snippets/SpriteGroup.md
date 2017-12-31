@@ -33,6 +33,8 @@ class SpriteName extends Phaser.Sprite {
 		this.gameScene = gameScene;
 		this.x = x;
 		this.y = y;
+		
+		this.reset(this.x, this.y);
 	}
 }
 ```
