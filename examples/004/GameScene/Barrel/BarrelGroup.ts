@@ -13,7 +13,7 @@ class BarrelGroup extends Phaser.Group {
 			this.add(barrel);
 		}
 		
-		barrel.setup(x, y, barrelSpeed);
+		barrel.setup(this.gameScene, x, y, barrelSpeed);
 		
 		return barrel;
 	}
@@ -22,12 +22,10 @@ class BarrelGroup extends Phaser.Group {
 		if (this.gameScene.gameLive) {
 			this.game.physics.arcade.collide(this, this.gameScene.ground);
 			this.game.physics.arcade.collide(this, this.gameScene.platforms);
-			
-			this.forEachExists((barrel:Barrel) => {
-				if (barrel.x < 10 && barrel.y > 762) {
-					barrel.kill();
-				}
-			}, this);
 		}
+		
+		this.forEachExists((barrel:Barrel) => {
+			barrel.update();
+		}, this);
 	}
 }

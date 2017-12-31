@@ -36,6 +36,12 @@ class SpriteName extends Phaser.Sprite {
 		
 		this.reset(this.x, this.y);
 	}
+	
+	update() {
+		if (this.gameScene.gameLive) {
+			
+		}
+	}
 }
 ```
 
@@ -62,11 +68,9 @@ class SpriteNameGroup extends Phaser.Group {
 	}
 	
 	update() {
-		if (this.gameScene.gameLive) {
-			this.forEachExists((spriteName:SpriteName) => {
-				
-			}, this);
-		}
+		this.forEachExists((spriteName:SpriteName) => {
+			spriteName.update();
+		}, this);
 	}
 }
 ```
