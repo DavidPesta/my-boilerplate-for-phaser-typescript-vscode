@@ -30,11 +30,11 @@ class SpriteName extends Phaser.Sprite {
 		
 		// ATTENTION: loadTexture must come before anything else, especially enabling physics
 		
-		this.gameScene = gameScene;
-		this.x = x;
-		this.y = y;
+		this.reset(x, y);
 		
-		this.reset(this.x, this.y);
+		this.gameScene = gameScene;
+		
+		this.anchor.setTo(0.5);
 	}
 	
 	update() {

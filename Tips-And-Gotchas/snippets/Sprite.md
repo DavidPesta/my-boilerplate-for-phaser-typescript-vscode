@@ -30,6 +30,8 @@ class SpriteName extends Phaser.Sprite {
 		this.game.add.existing(this);
 		
 		this.gameScene = gameScene;
+		
+		this.anchor.setTo(0.5);
 	}
 	
 	update() {
