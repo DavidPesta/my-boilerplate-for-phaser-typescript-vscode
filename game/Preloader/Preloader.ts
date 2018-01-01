@@ -14,6 +14,7 @@ class Preloader extends Phaser.State {
 		this.load.setPreloadSprite(this.preloadBar);
 		
 		GameScene.loadAssets(this.game);
+		Background.loadAssets(this.game);
 	}
 	
 	create() {

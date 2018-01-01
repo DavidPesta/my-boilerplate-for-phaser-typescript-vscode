@@ -43,6 +43,9 @@ let randomProperty:PropertyType = obj[keys[keys.length * Math.random() << 0]];
 * When an event is fired, its listener function will be passed two arguments. The first argument is the source object from which the event originated. The second argument is the phaser event object for that event. When "this" is used within the listener function, that is the listenerContext that is passed when setting up the event.
 
 
+* The best practice for input events attached to sprite objects is as follows. When a sprite object needs to have input interactions act upon it, be sure to have "this.inputEnabled = true;" added to its constructor. Now, when interacting with this sprite, the method of some different target object may be the subject of the interaction response. In that case, wherever in the code base that the target object exists when this interactivity should be attached, that is where "sourceObject.events.onInputDown.add(targetObject.method, targetObject);" should be placed. The target object may not exist yet when this source sprite object is created, and in that case, the event handler cannot be created inside of this source sprite object's constructor. On the other hand, if the target object is this same sprite object, then the event handler could well be placed inside of this sprite's constructor. But to keep things flexible, it might be good to keep it outside of the constructor, just in case the source needs to change. (But leave that to the developer's discretion; it's easy enough to move elsewhere.)
+
+
 * When a Sprite belongs to a Group, its update method does not fire, probably to save resources. Rather, the update method on the group needs to be used. Use this.forEachExists, for example, inside of the group's update method. Inside of that loop within the group's update(), the individual sprite's update() methods can be called, thereby making update() within the sprite work all the same.
 
 

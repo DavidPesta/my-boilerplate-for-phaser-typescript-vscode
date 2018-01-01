@@ -35,6 +35,8 @@ class SpriteName extends Phaser.Sprite {
 		this.gameScene = gameScene;
 		
 		this.anchor.setTo(0.5);
+		
+		//this.inputEnabled = true;
 	}
 	
 	update() {
