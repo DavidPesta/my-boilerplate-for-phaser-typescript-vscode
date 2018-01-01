@@ -40,7 +40,10 @@ let keys:string[] = Object.keys(obj);
 let randomProperty:PropertyType = obj[keys[keys.length * Math.random() << 0]];
 ```
 
-* When a Sprite belongs to a Group, its update method does not fire, probably to save resources. Rather, the update method on the group needs to be used. Use this.forEachExists, for example, inside of the group's update method.
+* When an event is fired, its listener function will be passed two arguments. The first argument is the source object from which the event originated. The second argument is the phaser event object for that event. When "this" is used within the listener function, that is the listenerContext that is passed when setting up the event.
+
+
+* When a Sprite belongs to a Group, its update method does not fire, probably to save resources. Rather, the update method on the group needs to be used. Use this.forEachExists, for example, inside of the group's update method. Inside of that loop within the group's update(), the individual sprite's update() methods can be called, thereby making update() within the sprite work all the same.
 
 
 * To examine variable values inside of the Chrome dev tools, this is where they can be found: window.Phaser.GAMES[0].world.children
