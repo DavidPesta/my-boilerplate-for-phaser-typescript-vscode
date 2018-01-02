@@ -49,4 +49,7 @@ let randomProperty:PropertyType = obj[keys[keys.length * Math.random() << 0]];
 * When a Sprite belongs to a Group, its update method does not fire, probably to save resources. Rather, the update method on the group needs to be used. Use this.forEachExists, for example, inside of the group's update method. Inside of that loop within the group's update(), the individual sprite's update() methods can be called, thereby making update() within the sprite work all the same.
 
 
+* There are times when you want a sprite to be involved with functionality that utilizes the exact screen location of that sprite--not just its world position. When that is needed, you'll need to maintain a translation between its world location and its screen position, and/or perhaps vice versa. In that case, you will need to write the methods that perform these translations and you will want these methods to be in that sprite's class. You will most certainly need to take into account the world coordinates of the sprite, the sprite's anchor point, and also the coordinates of the camera. But also, if you are wanting to correlate an exact pixel position on the sprite itself to the screen position, you may also need to take the sprite's scaling involved. The bottom line is, you need to focus on creating a method that performs explicit translation of a pixel position on the sprite to the pixel position on the screen view.
+
+
 * To examine variable values inside of the Chrome dev tools, this is where they can be found: window.Phaser.GAMES[0].world.children
