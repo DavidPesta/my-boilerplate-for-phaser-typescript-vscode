@@ -1281,7 +1281,7 @@ declare module Phaser {
         * @param fillStyle If set the context fillStyle will be set to this value before the circle is drawn.
         * @return This BitmapData object for method chaining.
         */
-        circle(x: number, y: number, radius: number, fillStyle?: string): Phaser.BitmapData;
+        circle(x: number, y: number, radius: number, fillStyle?: string | CanvasGradient): Phaser.BitmapData;
 
         /**
         * Clears the BitmapData context using a clearRect.
